@@ -5,30 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a148977-982f-4178-b808-3bae30010ae9" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/genie-backend/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/joyagent-jdgenie.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/joyagent-jdgenie.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genie-backend/src/main/java/com/jd/genie/config/data/DataAgentModelConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/genie-backend/src/main/java/com/jd/genie/config/data/DataAgentModelConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genie-backend/src/main/java/com/jd/genie/service/DataAgentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/genie-backend/src/main/java/com/jd/genie/service/DataAgentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genie-backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/genie-backend/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genie-tool/.env_template" beforeDir="false" afterPath="$PROJECT_DIR$/genie-tool/.env_template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genie-tool/genie_tool/db/file_table_op.py" beforeDir="false" afterPath="$PROJECT_DIR$/genie-tool/genie_tool/db/file_table_op.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genie-tool/genie_tool/tool/analysis_component/analysis_tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/genie-tool/genie_tool/tool/analysis_component/analysis_tool.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genie-tool/genie_tool/tool/analysis_component/schema_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/genie-tool/genie_tool/tool/analysis_component/schema_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genie-tool/genie_tool/tool/auto_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/genie-tool/genie_tool/tool/auto_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genie-tool/genie_tool/tool/nl2sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/genie-tool/genie_tool/tool/nl2sql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genie-tool/genie_tool/tool/table_rag/table_column_filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/genie-tool/genie_tool/tool/table_rag/table_column_filter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genie-tool/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/genie-tool/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genie-tool/uv.lock" beforeDir="false" afterPath="$PROJECT_DIR$/genie-tool/uv.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/ActionView/FileList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/ActionView/FileList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +22,12 @@
     &quot;assignee&quot;: &quot;Ahern542968&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:Ahern542968/joyagent-jdgenie.git",
-    "accountId": "a34c0509-0220-4e79-b7ec-d45a9be8e96c"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Ahern542968/joyagent-jdgenie.git&quot;,
+    &quot;accountId&quot;: &quot;a34c0509-0220-4e79-b7ec-d45a9be8e96c&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -58,24 +36,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "my-data-agent",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "ts.external.directory.path": "D:\\softwares\\ideaIU\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;my-data-agent&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\softwares\\ideaIU\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
