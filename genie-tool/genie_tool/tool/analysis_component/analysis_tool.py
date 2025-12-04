@@ -66,6 +66,7 @@ class GetDataTool(Tool):
     @classmethod
     @timer()
     def merge_df(cls, datas: List[Dict]) -> pd.DataFrame:
+        print(f"datas: {datas}")
         joined_df = cls.to_df(datas[0])
         if len(datas) > 1 and (prefix := "_".join([f"{f['name']}为{f['val']}" for f in datas[0]["filters"] 
                 if f["opt"] in ["EQUALS"] and f["dataType"] in ["VARCHAR"] and not re.match(r"^\d{4}-\d{2}-\d{2}$", f["val"])])):
@@ -242,8 +243,7 @@ class DataTransTool(Tool):
             df = df.groupby(column).agg({measure: agg}).reset_index()
             df[f"Rate({measure})"] = df[measure] / df[measure].sum()
         if trans_type == "increase":
-            df = df.groupby(column).agg({measure: agg})\
-                .sort_values(by=column, ascending=True).reset_index()
+            df = df.groupby(column).agg({measure: agg}).sort_values(by=column, ascending=True).reset_index()
             df[f"Increase({measure})"] = df[measure].diff(1)
             df = df.dropna()
         if trans_type == "sub_avg":

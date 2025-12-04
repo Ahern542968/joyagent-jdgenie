@@ -75,7 +75,9 @@ public class DataAgentService {
         try {
             enrichNl2Sql(baseNl2SqlReq);
             baseNl2SqlReq.setDbType(dataAgentConfig.getDbConfig().getType());
-            return nl2SqlService.runNL2SQLSync(baseNl2SqlReq);
+            List<ChatQueryData> chat_query_data_list = nl2SqlService.runNL2SQLSync(baseNl2SqlReq);
+            log.info("apiChatQueryData结果为： {}", chat_query_data_list);
+            return chat_query_data_list;
         } catch (Exception e) {
             log.error("{},{} api chat query error : {}", baseNl2SqlReq.getTraceId(), baseNl2SqlReq.getRequestId(), e.getMessage(), e);
             return new ArrayList<>();

@@ -8,6 +8,16 @@ from genie_tool.db.file_table import FileInfo
 from genie_tool.db.db_engine import async_session_local
 from genie_tool.util.log_util import timer
 
+import hashlib
+
+def md5_string(text: str) -> str:
+    # 创建 MD5 对象
+    md5 = hashlib.md5()
+    # 更新要加密的内容（必须是 bytes 类型）
+    md5.update(text.encode("utf-8"))
+    # 返回十六进制形式的 MD5 字符串
+    return md5.hexdigest()
+
 
 class _FileDB(object):
     def __init__(self):
@@ -20,7 +30,7 @@ class _FileDB(object):
             file_name = os.path.basename(file_name)
         else:
             file_name = f"{file_name}.txt"
-
+        scope = md5_string(scope)
         save_path = os.path.join(self._work_dir, scope)
         if not os.path.exists(save_path):
             os.makedirs(save_path)

@@ -3,6 +3,7 @@ import re
 import os
 import asyncio
 import json
+import sys
 import textwrap
 import time
 import traceback
@@ -12,6 +13,9 @@ from datetime import date
 
 from typing import List, Dict
 from jinja2 import Template
+
+root_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+sys.path.insert(0, root_path)
 
 from genie_tool.util.prompt_util import get_prompt
 from genie_tool.util.log_util import logger

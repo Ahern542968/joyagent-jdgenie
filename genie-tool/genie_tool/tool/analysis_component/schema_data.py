@@ -29,7 +29,6 @@ def get_schema(modelCodeList: List[str], timeout: float = 5, request_id: str = N
         response.raise_for_status()
     return json.loads(response.text)
 
-
 @timer()
 def get_data(query: str, modelCodeList: List[str], timeout: float = 90, request_id: str = None, **kwargs) -> List:
     body = {

@@ -15,7 +15,7 @@ from jinja2 import Template
 import pandas as pd
 
 from smolagents import PythonInterpreterTool, Tool, ActionStep, ActionOutput, ToolCall, FinalAnswerStep
-from smolagents import CodeAgent, OpenAIServerModel
+from smolagents import CodeAgent, OpenAIServerModel, AzureOpenAIServerModel
 
 from genie_tool.util.log_util import timer
 from genie_tool.util.file_util import upload_file
@@ -154,13 +154,16 @@ def create_agent(
         max_steps: int = 10,
         return_full_result: bool = False,
 ) -> CodeAgent:
-    model = os.getenv("ANALYSIS_MODEL", "gpt-4.1")
-    base_url = os.getenv("OPENAI_BASE_URL")
-    api_key = os.getenv("OPENAI_API_KEY")
-    _model = OpenAIServerModel(
+    model = os.getenv("ANALYSIS_MODEL", "azure/gpt-4o")
+
+    base_url = os.getenv("AZURE_API_BASE")
+    api_key = os.getenv("AZURE_API_KEY")
+    api_version = os.getenv("AZURE_API_VERSION", "2024-02-01")
+    _model = AzureOpenAIServerModel(
         model_id=model,
-        api_base=base_url,
         api_key=api_key,
+        azure_endpoint=base_url,
+        api_version=api_version
     )
     
     return CodeAgent(
